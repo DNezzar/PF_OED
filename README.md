@@ -5,7 +5,7 @@ Minimal 2D phase‑field brittle fracture demo with an irreversible history fiel
 <img width="1001" height="713" alt="results" src="https://github.com/user-attachments/assets/d9a2fe5c-99b3-4b6e-8c6d-7099daaaa684" />
 
 ## Modes
-- **SD3**: orthogonal split in the energy norm using C^(1/2) and C^(-1/2)  
+- **OED**: orthogonal split in the energy norm using C^(1/2) and C^(-1/2)  
   Driving energy: Ψ⁺ = ½ ε⁺ᵀ C ε⁺  
   Stress: σ = g(d) C:ε⁺ + C:ε⁻
 - **Classic**: positive principal‑strain energy for damage driving  
