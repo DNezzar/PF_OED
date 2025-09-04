@@ -1,6 +1,6 @@
 # PF_OED — Phase-field brittle fracture with Orthogonal Energy Decomposition
 
-Minimal 2D (Q4) phase-field demo comparing **OED** (a.k.a. SD3) vs a **classic** tensile split.  
+Minimal 2D (Q4) phase-field demo comparing **OED** vs a **classic** tensile split.  
 It includes a monotone **history variable** H for irreversibility, a **nodal projection** (dⁿ⁺¹ ≥ dⁿ), and a **triangular loading**: 0 → +U → 0 → −U → 0.
 
 ---
