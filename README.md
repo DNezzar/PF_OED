@@ -1,8 +1,8 @@
 # PF_OED — Phase‑field fracture (2D Q4)
 
 Minimal 2D phase‑field brittle fracture demo with an irreversible history field and a triangular load path: 0 → +U → 0 → −U → 0. Compares OED split vs a classic split.
-[results.pdf](https://github.com/user-attachments/files/22138920/results.pdf)
-<img width="800" height="500" alt="results" src="https://github.com/user-attachments/assets/88938835-be3c-4b5e-813e-4fabbb9e1d44" />
+[results.pdf](https://github.com/user-attachments/files/22141236/results.pdf)
+<img width="1001" height="713" alt="results" src="https://github.com/user-attachments/assets/d9a2fe5c-99b3-4b6e-8c6d-7099daaaa684" />
 
 ## Modes
 - **SD3**: orthogonal split in the energy norm using C^(1/2) and C^(-1/2)  
