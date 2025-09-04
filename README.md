@@ -1,26 +1,26 @@
-# PF_OED — Phase-field brittle fracture with Orthogonal Energy Decomposition
+# PF_OED — Phase‑field fracture (2D Q4)
 
-Minimal 2D (Q4) phase-field demo comparing **OED** vs a **classic** tensile split.  
-It includes a monotone **history variable** H for irreversibility, a **nodal projection** (dⁿ⁺¹ ≥ dⁿ), and a **triangular loading**: 0 → +U → 0 → −U → 0.
+Minimal 2D phase‑field brittle fracture demo with an irreversible history field and a triangular load path: 0 → +U → 0 → −U → 0. Compares OED split vs a classic split.
 
----
+## Modes
+- **SD3**: orthogonal split in the energy norm using C^(1/2) and C^(-1/2)  
+  Driving energy: Ψ⁺ = ½ ε⁺ᵀ C ε⁺  
+  Stress: σ = g(d) C:ε⁺ + C:ε⁻
+- **Classic**: positive principal‑strain energy for damage driving  
+  Stress: σ = g(d) C:ε
 
-## What’s inside
+## Irreversibility
+History variable at Gauss points: Hⁿ⁺¹(x) = max(Hⁿ(x), Ψ⁺(x))  
+Nodal projection enforces φⁿ⁺¹ ≥ φⁿ
 
-- **OED split (energy-orthogonal)** with two options:
-  - `oed_method="projector"`: closed-form 2×2 (invariants + projectors), no eigvecs
-  - `oed_method="eig"`: standard eigendecomposition in the transformed space
-- **Classic split** (reference): positive principal strains of ε (no C¹ᐟ²) and degradation on total stress
-- **Plane strain**, **isotropic elasticity** in Voigt `[εxx, εyy, γxy]` with `γxy = 2 εxy`
-- **Unilateral stress** for OED:  
-  `σ = g(d) C ε⁺ + C ε⁻`, with `g(d) = (1 − d)² + k`
-- **Outputs**: figures + `.dat` files for post-processing
-
-> This is a didactic single-element example (Q4, 4 Gauss points). All model parameters are grouped at the **top of the script**.
-
----
-
-## Script
-
+## Run
 ```bash
-python PF_OED.py
+python PF_SD3.py
+```
+
+## Notes
+Voigt vector: [εxx εyy γxy] with γxy = 2 εxy  
+Degradation: g(d) = (1 − φ)² + k
+
+## Reference
+Implementation of a new strain split to model unilateral contact within the phase field method (IJNME 2020).
