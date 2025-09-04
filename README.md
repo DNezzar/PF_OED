@@ -20,11 +20,7 @@ It includes a monotone **history variable** H for irreversibility, a **nodal pro
 
 ---
 
-## Quick start
+## Script
 
 ```bash
-# minimal environment
-python -m venv .venv
-source .venv/bin/activate  # (Windows: .venv\Scripts\activate)
-pip install numpy matplotlib
 python PF_OED.py
