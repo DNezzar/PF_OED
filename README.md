@@ -21,8 +21,13 @@ python PF_SD3.py
 ```
 
 ## Notes
-Voigt vector: [εxx εyy γxy] with γxy = 2 εxy  
-Degradation: g(d) = (1 − φ)² + k
+AT2 degradation: g(d) = (1 − φ)² + k
 
 ## Reference
-Implementation of a new strain split to model unilateral contact within the phase field method (IJNME 2020).
+"T.-T. Nguyen, J. Yvonnet, D. Waldmann, and Q.-C. He. Implementation of a new strain split to model unilateral contact within the phase field method". 
+International Journal for Numerical Methods in Engineering, 121(21):4717–4733, 2020. doi: https://doi.org/10.1002/nme.6463. 
+URL https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.6463.
+
+"Q.-C. He. Three-dimensional strain and stress orthogonal decompositions via an elastic energy preserving transformation." 
+International Journal of Solids and Structures, 295: 112818, 2024. ISSN 0020-7683. doi: https://doi.org/10.1016/j.ijsolstr.2024.112818. 
+URL https://www.sciencedirect.com/science/article/pii/S002076832400177X.
